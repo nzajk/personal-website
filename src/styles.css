@@ -11,6 +11,16 @@ nav {
 
 a {
     color: #0081FB;
+    text-decoration: none;
+}
+
+h2 {
+    padding-top: 0.5%;
+
+}
+
+li {
+    list-style-type: none;
 }
 
 .navi {
@@ -25,7 +35,7 @@ a {
     transition: 0.75s;
 }
 
-.main {
+.photo-container {
     padding-top: 2%;
     padding-left: 15%;
     padding-bottom: 2.5%;
@@ -41,4 +51,26 @@ a {
     margin: 5px;
     margin-bottom: 0;
     margin-left: 0;
+}
+
+.main {
+    padding-top: 2%;
+    padding-left: 15%;
+    padding-bottom: 2.5%;
+}
+
+.book {
+    display: flex;
+    flex-direction: row;
+}
+
+.book .title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.book .title, .book .author, .book .date{
+    flex: 0.15;
+    padding-bottom: 0.15%;
 }
