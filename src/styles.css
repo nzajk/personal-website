@@ -4,23 +4,18 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #fbf7f5;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;  
+}
+
 nav {
     padding-top: 5%;
     padding-left: 15%;
-}
-
-a {
-    color: #0081FB;
-    text-decoration: none;
-}
-
-h2 {
-    padding-top: 0.5%;
-
-}
-
-li {
-    list-style-type: none;
+    height: auto;
 }
 
 .navi {
@@ -33,6 +28,37 @@ li {
 .navi:hover {
     color: purple;
     transition: 0.75s;
+}
+
+a {
+    color: #0081FB;
+    text-decoration: none;
+}
+
+a.title:hover, a.socials:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    font-weight: 450;
+    font-size: 1.3em;
+}
+
+h3 {
+    padding-top: 1.5%;
+    font-weight: 400;
+}
+
+hr {
+    height: 0;
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    margin-top: 2.5px;
+    margin-bottom: 5px;
+}
+
+li {
+    list-style-type: none;
 }
 
 .photo-container {
@@ -57,6 +83,7 @@ li {
     padding-top: 2%;
     padding-left: 15%;
     padding-bottom: 2.5%;
+    padding-right: 15%;
 }
 
 .book {
@@ -64,13 +91,41 @@ li {
     flex-direction: row;
 }
 
-.book .title {
+.book .title, .book .author, .book .date{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-}
-
-.book .title, .book .author, .book .date{
     flex: 0.15;
     padding-bottom: 0.15%;
+    padding-top: 0.25%;
+}
+
+.read {
+    padding-top: 1.5%;
+}
+
+.extra_info {
+    padding-top: 2.5%;
+}
+
+img {
+    height: 10%;
+    width: 10%;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    padding-right: 1.5%;
+    gap: 10px; /* Adds space between items */
+}
+
+.about_me {
+    padding-top: 0.5%;
 }
